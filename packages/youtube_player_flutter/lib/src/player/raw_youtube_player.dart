@@ -374,7 +374,7 @@ class _RawYoutubePlayerState extends State<RawYoutubePlayer> with WidgetsBinding
 
   String boolean({required bool value}) => value ? "'1'" : "'0'";
 
-  String? get userAgent => controller!.flags.forceHD
+  String get userAgent => controller!.flags.forceHD
       ? 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
-      : null;
+      : "";
 }
