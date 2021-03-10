@@ -82,7 +82,7 @@ class _RawYoutubePlayerState extends State<RawYoutubePlayer> with WidgetsBinding
         initialOptions: InAppWebViewGroupOptions(
           ios: IOSInAppWebViewOptions(allowsInlineMediaPlayback: true),
           crossPlatform: InAppWebViewOptions(
-            userAgent: userAgent!,
+            userAgent: userAgent,
             mediaPlaybackRequiresUserGesture: false,
             transparentBackground: true,
           ),

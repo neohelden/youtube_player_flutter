@@ -108,7 +108,7 @@ class _MobileYoutubePlayerState extends State<RawYoutubePlayer> with WidgetsBind
           },
       initialOptions: InAppWebViewGroupOptions(
         crossPlatform: InAppWebViewOptions(
-          userAgent: userAgent!,
+          userAgent: userAgent,
           mediaPlaybackRequiresUserGesture: false,
           transparentBackground: true,
           disableContextMenu: true,
@@ -332,7 +332,7 @@ class _MobileYoutubePlayerState extends State<RawYoutubePlayer> with WidgetsBind
     </body>
   ''';
 
-  String? get userAgent => controller!.params.desktopMode
+  String get userAgent => controller!.params.desktopMode
       ? 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
-      : null;
+      : "";
 }
